@@ -332,22 +332,22 @@ html:not(.js) .step{position:relative;opacity:1;margin-bottom:2rem}
 .gallery__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(.9rem,2.4vw,2rem);margin-top:clamp(2.6rem,6vw,5rem);align-items:start}
 .tile{position:relative;perspective:900px}
 .tile__frame{--tile-bg:var(--blush);position:relative;aspect-ratio:3/4;border-radius:999px 999px clamp(14px,2vw,26px) clamp(14px,2vw,26px);background:var(--tile-bg);overflow:hidden;transform-style:preserve-3d;will-change:transform;--mx:50%;--my:30%;box-shadow:0 26px 40px -28px rgba(29,15,21,.55);cursor:pointer}
-.tile__art{position:absolute;inset:-8% -4%;display:grid;place-items:center;will-change:transform}
-.tile__art svg{width:88%;height:auto;overflow:visible;filter:drop-shadow(0 18px 18px rgba(29,15,21,.28))}
+.tile__art{position:absolute;inset:-7% 0;will-change:transform}
+.tile__art img{width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 50%);transition:transform 1.2s var(--ease)}
+.tile__frame:hover .tile__art img{transform:scale(1.06)}
 .tile__gloss{position:absolute;inset:0;pointer-events:none;background:radial-gradient(360px circle at var(--mx) var(--my),rgba(255,255,255,.55),transparent 50%);mix-blend-mode:soft-light;opacity:0;transition:opacity .4s}
 .tile__frame:hover .tile__gloss{opacity:1}
 .tile figcaption{position:relative;margin-top:.9rem;display:grid;gap:.15rem}
 .tile figcaption strong{font-family:var(--f-display);font-weight:500;font-size:clamp(1.2rem,2vw,1.7rem);line-height:1.1}
 .tile figcaption span{font-size:.84rem;color:var(--muted);letter-spacing:.02em}
-.tile--a .tile__frame{--tile-bg:#EBCFC4}.tile--b .tile__frame{--tile-bg:#2C1620}.tile--c .tile__frame{--tile-bg:#C9B6D8}.tile--d .tile__frame{--tile-bg:#E7BDB0}
-.tile--e .tile__frame{--tile-bg:#6B2238}.tile--f .tile__frame{--tile-bg:#D9C6A6}.tile--g .tile__frame{--tile-bg:#E8D9CB}.tile--h .tile__frame{--tile-bg:#8E3B4B}
+.tile--a .tile__frame{--tile-bg:#EBCFC4;--pos:40% 50%}.tile--b .tile__frame{--tile-bg:#E7BDB0;--pos:42% 50%}.tile--c .tile__frame{--tile-bg:#2C1620;--pos:45% 50%}.tile--d .tile__frame{--tile-bg:#8E3B4B;--pos:8% 50%}
 @media (min-width:900px){
   .gallery__grid{grid-template-columns:repeat(4,1fr)}
   .tile:nth-child(4n+2){margin-top:clamp(40px,7vw,110px)}
   .tile:nth-child(4n+3){margin-top:clamp(10px,2vw,30px)}
   .tile:nth-child(4n+4){margin-top:clamp(60px,10vw,150px)}
-  .tile--a .tile__frame,.tile--g .tile__frame{aspect-ratio:3/4.4}
-  .tile--d .tile__frame,.tile--e .tile__frame{aspect-ratio:3/4.2}
+  .tile--a .tile__frame{aspect-ratio:3/4.4}
+  .tile--d .tile__frame{aspect-ratio:3/4.2}
 }
 .tile figcaption{transition:transform .6s var(--ease)}
 @media (hover:hover){.tile:hover figcaption{transform:translateY(-4px)}}
@@ -555,3 +555,16 @@ html:not(.js) .review{position:relative;opacity:1;visibility:visible;margin-bott
   .story__text .h2{font-size:clamp(1.9rem,8vw,2.6rem);margin-top:.6rem}
   .story__bignum{right:6%;font-size:5rem}
 }
+
+/* ───────── L’atelier (portrait) ───────── */
+.atelier{background:var(--nacre);padding:clamp(4rem,9vw,8rem) 0 clamp(6rem,12vw,11rem);position:relative;overflow:clip}
+.atelier__inner{display:grid;gap:clamp(2rem,6vw,5rem);align-items:center}
+.atelier__visual{position:relative;width:min(78%,440px);margin-inline:auto}
+.atelier__frame{position:relative;aspect-ratio:350/442;clip-path:url(#archBB);background:var(--blush);will-change:transform}
+.atelier__frame img{position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover;object-position:50% 30%;will-change:transform}
+.atelier__ring{position:absolute;z-index:2;width:clamp(110px,40%,170px);right:-14%;bottom:8%;animation:spin 26s linear infinite;background:var(--nacre);border-radius:50%;padding:6px;box-shadow:0 14px 30px -12px rgba(29,15,21,.5)}
+.atelier__ring text{font-family:var(--f-text);font-size:12.4px;letter-spacing:.2em;text-transform:uppercase;fill:var(--rose)}
+.atelier__text p{margin-top:1.3rem;max-width:34rem;color:var(--muted)}
+.atelier__text .btn{margin-top:2rem}
+.atelier__text .btn{--bg:var(--ink);--fg:var(--nacre);--fill:var(--rose)}
+@media (min-width:900px){.atelier__inner{grid-template-columns:.8fr 1.2fr}.atelier__visual{width:min(100%,460px)}}

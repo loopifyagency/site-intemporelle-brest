@@ -380,6 +380,14 @@
     }
   });
 
+  /* ───────────────────────── L’atelier ───────────────────────── */
+  if (!reduce) {
+    gsap.from('.atelier__frame', { scale: 0.86, yPercent: 8, opacity: 0, duration: 1.6, ease: 'expo.out', scrollTrigger: { trigger: '.atelier__visual', start: 'top 85%', once: true } });
+    gsap.fromTo('.atelier__frame img', { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: '.atelier', start: 'top bottom', end: 'bottom top', scrub: true } });
+    gsap.from('.atelier__ring', { scale: 0, rotate: -90, duration: 1.4, ease: 'back.out(1.6)', scrollTrigger: { trigger: '.atelier__visual', start: 'top 65%', once: true } });
+    gsap.from('.atelier__text p, .atelier__text .btn', { y: 36, opacity: 0, duration: 1.1, ease: 'power3.out', stagger: 0.12, scrollTrigger: { trigger: '.atelier__text', start: 'top 70%', once: true } });
+  }
+
   /* ───────────────────────── Avis : carrousel ───────────────────────── */
   (function reviews() {
     const stage = $('#revStage');

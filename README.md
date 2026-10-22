@@ -14,3 +14,8 @@ Site statique (HTML / CSS / JS, aucune étape de build) pour le salon de manucur
 - **Réseaux sociaux** : aucun lien fourni, donc non affiché dans le footer.
 - **Réservation** : pas de moteur de réservation en ligne ; le composeur calcule prix/durée puis propose appel ou SMS au 07 63 51 03 24.
 - **Prestations / tarifs** : section `#prestations` (HTML) et tableau `GROUPS` dans `assets/js/main.js` (composeur).
+
+## Déploiement (GitHub Pages)
+Le workflow `.github/workflows/pages.yml` publie `index.html` + `assets/` à chaque push sur `main`.
+Prérequis, une seule fois : *Settings → Pages → Build and deployment → Source : **GitHub Actions***.
+URL attendue : https://loopifyagency.github.io/site-intemporelle-brest/

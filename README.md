@@ -9,8 +9,7 @@ Site statique (HTML / CSS / JS, aucune étape de build) pour le salon de manucur
 - Respecte `prefers-reduced-motion` (version statique, sans pin ni défilement horizontal).
 
 ## À personnaliser
-- **Visuels du nuancier / hero** : dessinés en SVG par `assets/js/main.js` (`data-nailset`). Pour utiliser de vraies
-  photos, remplacer le contenu des `.tile__art` (section « Nuancier ») par une balise `<img loading="lazy" alt="…">`.
+- **Photos** : `assets/img/` (nuancier + portrait de l'atelier). Fournir des originaux en haute définition (≥ 1200 px de large) pour un rendu plus net ; remplacer les fichiers en gardant les mêmes noms, ou modifier les `<img>` dans `index.html`. Le hero utilise encore des ongles dessinés en SVG (`data-nailset`, voir `assets/js/main.js`).
 - **Réseaux sociaux** : aucun lien fourni, donc non affiché dans le footer.
 - **Réservation** : pas de moteur de réservation en ligne ; le composeur calcule prix/durée puis propose appel ou SMS au 07 63 51 03 24.
 - **Prestations / tarifs** : section `#prestations` (HTML) et tableau `GROUPS` dans `assets/js/main.js` (composeur).

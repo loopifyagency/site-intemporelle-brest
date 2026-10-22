@@ -281,6 +281,23 @@
   </div>
 </section>
 
+<!-- ═════════════ L’ATELIER (portrait) ═════════════ -->
+<section class="atelier" id="atelier" aria-labelledby="atelier-title">
+  <div class="atelier__inner container">
+    <div class="atelier__visual">
+      <svg class="atelier__ring" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="ringPath" d="M100 100m-86 0a86 86 0 1 1 172 0a86 86 0 1 1-172 0"/></defs><text><textPath href="#ringPath">Technicienne ongulaire • Brest • Capsules • Gel • Nail art •</textPath></text></svg>
+      <div class="atelier__frame"><img src="assets/img/atelier.jpg" width="350" height="442" alt="La technicienne ongulaire du salon, souriante, un pinceau et un bâtonnet à la main" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="atelier__text">
+      <p class="eyebrow"><span class="eyebrow__dot"></span>L’atelier</p>
+      <h2 class="h2" id="atelier-title" data-split="words">Une technicienne ongulaire qui prend le temps.</h2>
+      <p>Derrière L’intemporelle, une prothésiste ongulaire installée à Brest : capsules américaines, gel, vernis semi-permanent, soin japonais et nail art. Ici, on écoute d’abord ce que tu veux, on prépare soigneusement, puis on pose.</p>
+      <p>Le salon t’accueille du lundi au samedi, de 9h à 21h, au 245 rue Anatole France.</p>
+      <a class="btn magnetic" href="#rdv"><span class="btn__fill"></span><span class="btn__txt">Prendre rendez-vous</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
 <!-- ═════════════ 4 · PRESTATIONS (défilement horizontal) ═════════════ -->
 <section class="services" id="prestations" aria-labelledby="services-title">
   <div class="sep sep--diag" aria-hidden="true"></div>
@@ -390,20 +407,14 @@
 <section class="gallery" id="nuancier" aria-labelledby="gallery-title">
   <div class="gallery__top container">
     <p class="eyebrow"><span class="eyebrow__dot"></span>04 — Le nuancier</p>
-    <h2 class="h2" id="gallery-title" data-split="words">Huit façons d’habiller dix ongles.</h2>
-    <p class="gallery__lead">Du nude lumineux au bordeaux profond, du French poudré aux petites fleurs dessinées à la main : quelques finitions que tu peux demander, avec la prestation qui va avec.</p>
+    <h2 class="h2" id="gallery-title" data-split="words">Des ongles en vrai, sans filtre.</h2>
+    <p class="gallery__lead">Nude brillant, French, noir miroir : quelques finitions que tu peux demander. Dis-nous ce qui te plaît, on s’occupe du reste.</p>
   </div>
   <div class="gallery__grid container" id="galleryGrid">
-    <!-- Les visuels sont générés par assets/js/main.js (data-nailset). Pour utiliser de vraies photos :
-         remplacer le contenu de .tile__art par <img src="…" alt="…" loading="lazy"> -->
-    <figure class="tile tile--a" data-tile><div class="tile__frame"><div class="tile__art" data-nailset="nude"></div><div class="tile__gloss"></div></div><figcaption><strong>Nude brillant</strong><span>Ongles naturels + renfort gel · 55 €</span></figcaption></figure>
-    <figure class="tile tile--b" data-tile><div class="tile__frame"><div class="tile__art" data-nailset="french"></div><div class="tile__gloss"></div></div><figcaption><strong>French poudrée</strong><span>French 10 doigts · 7 €</span></figcaption></figure>
-    <figure class="tile tile--c" data-tile><div class="tile__frame"><div class="tile__art" data-nailset="chrome"></div><div class="tile__gloss"></div></div><figcaption><strong>Chrome nacré</strong><span>Effet nacré · dès 0,50 € / doigt</span></figcaption></figure>
-    <figure class="tile tile--d" data-tile><div class="tile__frame"><div class="tile__art" data-nailset="cat"></div><div class="tile__gloss"></div></div><figcaption><strong>Cat-eye bordeaux</strong><span>Vernis semi-permanent · 30 €</span></figcaption></figure>
-    <figure class="tile tile--e" data-tile><div class="tile__frame"><div class="tile__art" data-nailset="ombre"></div><div class="tile__gloss"></div></div><figcaption><strong>Dégradé rosé</strong><span>Décoration moyenne · dès 1 € / doigt</span></figcaption></figure>
-    <figure class="tile tile--f" data-tile><div class="tile__frame"><div class="tile__art" data-nailset="gem"></div><div class="tile__gloss"></div></div><figcaption><strong>Strass &amp; perles</strong><span>Décoration simple · 0,50 € / doigt</span></figcaption></figure>
-    <figure class="tile tile--g" data-tile><div class="tile__frame"><div class="tile__art" data-nailset="noir"></div><div class="tile__gloss"></div></div><figcaption><strong>Noir &amp; filet or</strong><span>Traits fins · dès 1 € / doigt</span></figcaption></figure>
-    <figure class="tile tile--h" data-tile><div class="tile__frame"><div class="tile__art" data-nailset="fleur"></div><div class="tile__gloss"></div></div><figcaption><strong>Petites fleurs</strong><span>Petits motifs · dès 1 € / doigt</span></figcaption></figure>
+    <figure class="tile tile--a" data-tile><div class="tile__frame"><div class="tile__art"><img src="assets/img/nude-1.jpg" width="356" height="262" alt="Main aux ongles en amande, nude rosé brillant" loading="lazy" decoding="async"></div><div class="tile__gloss"></div></div><figcaption><strong>Nude brillant</strong><span>Ongles amande, finition glossy</span></figcaption></figure>
+    <figure class="tile tile--b" data-tile><div class="tile__frame"><div class="tile__art"><img src="assets/img/french-brand.jpg" width="558" height="312" alt="Main aux ongles en amande avec French blanc, bagues dorées et fleurs roses" loading="lazy" decoding="async"></div><div class="tile__gloss"></div></div><figcaption><strong>French amande</strong><span>Pointe blanche fine, fond rosé</span></figcaption></figure>
+    <figure class="tile tile--c" data-tile><div class="tile__frame"><div class="tile__art"><img src="assets/img/noir.jpg" width="706" height="463" alt="Main aux ongles noirs brillants tenant une coupe de champagne" loading="lazy" decoding="async"></div><div class="tile__gloss"></div></div><figcaption><strong>Noir miroir</strong><span>Vernis noir, effet vitrail</span></figcaption></figure>
+    <figure class="tile tile--d" data-tile><div class="tile__frame"><div class="tile__art"><img src="assets/img/french-du-jour.jpg" width="711" height="456" alt="Deux mains posées sur une table en bois, French naturel" loading="lazy" decoding="async"></div><div class="tile__gloss"></div></div><figcaption><strong>French du jour</strong><span>French naturel, ongles courts</span></figcaption></figure>
   </div>
 </section>
 
